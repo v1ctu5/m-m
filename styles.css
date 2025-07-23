@@ -418,7 +418,7 @@ footer {
     min-height: 160px;
   }
   .img-box {
-    height: 180px; /* Increased from 140px */
+    height: 220px; /* Increased from 140px */
   }
 }
 @media (max-width: 600px) {
@@ -436,7 +436,7 @@ footer {
     border-radius: 14px;
   }
   .img-box {
-    height: 180px; /* Increased from 120px */
+    height: 220px; /* Increased from 120px */
     border-radius: 14px 14px 0 0;
   }
   .product.card img {
@@ -456,7 +456,7 @@ footer {
     width: 150px;
   }
   .img-box {
-    height: 120px; /* Increased from 80px */
+    height: 160px; /* Increased from 80px */
     border-radius: 10px 10px 0 0;
   }
   .product.card {
