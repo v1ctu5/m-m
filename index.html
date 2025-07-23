@@ -1,127 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Coming Soon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
-            overflow: hidden;
-        }
-        .neon-text {
-            text-shadow: 0 0 10px #00f6ff, 0 0 20px #00f6ff, 0 0 30px #00f6ff;
-        }
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.05); opacity: 0.8; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-        .float {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-        .particle {
-            position: absolute;
-            background: #00f6ff;
-            border-radius: 50%;
-            opacity: 0.5;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>MEAT & MEAT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Halal meat supply for all Kerala. Fast delivery for bulk and small orders. 24/7 service.">
+  <meta name="keywords" content="halal meat, bulk meat, small meat order, Kerala, beef, buffalo, liver, botti, sternums, kappakoot, heart, soup bone">
+  <meta property="og:title" content="MEAT & MEAT - Halal Meat Kerala">
+  <meta property="og:description" content="Halal meat supply for all Kerala. Fast delivery for bulk and small orders. 24/7 service.">
+  <meta property="og:image" content="logo-m.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e2311">
+  <link rel="icon" type="image/png" href="logo-m.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center min-h-screen text-white">
-    <div class="text-center px-4">
-        <img src="m&m.png" alt="Your Logo" class="mx-auto mb-6 w-32 sm:w-40 md:w-48 max-w-[40vw] float">
-        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold neon-text pulse">Coming Soon</h1>
-        <p class="mt-4 text-lg sm:text-xl md:text-2xl">Get ready for something extraordinary!</p>
-        <div class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <input type="email" placeholder="Enter your email" class="input-field w-full sm:w-auto">
-            <button class="btn">Notify Me</button>
-        </div>
+<body>
+ <div id="loading-spinner" aria-label="Loading, please wait">
+  <div class="meat-spinner">
+    🍖
+  </div>
+  <p class="loading-text">Fresh meat is being packed...</p>
+</div>
+
+  <header>
+    <div class="header-content">
+      <img src="logo-m.png" alt="Meat & Meat Logo" class="logo fade-in" width="120" height="120">
+      <img src="name-meat.png" alt="Meat & Meat" class="brand-name fade-in" width="320" height="75">
+      <div class="halal-badge slide-in">
+        <span>100% Halal</span>
+      </div>
     </div>
+    <div class="hero-text fade-in">
+      <h1 class="animated-text">Halal and Fresh Meats </h1>
+      <p>
+        Fresh. Hygienic. Delivered.<br>
+        Wholesale, bulk and small orders supplied across Kerala.<br>
+        <strong>Fast delivery. 24/7 Service.</strong>
+      </p>
+    </div>
+  </header>
 
-    <script>
-        // Particle animation optimized for mobile
-        function createParticle() {
-            // Reduce particles on smaller screens
-            if (window.innerWidth < 640 && Math.random() > 0.3) return;
+  <main>
+    <section class="contact-cta fade-in" id="contact">
+      <a class="cta whatsapp" href="https://wa.me/919745000319" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp" class="icon-btn" width="24" height="24">
+        Message on WhatsApp
+      </a>
+      <a class="cta phone" href="tel:+919745000319" target="_blank" rel="noopener" aria-label="Call us">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Phone" class="icon-btn" width="24" height="24">
+        Call Us
+      </a>
+      <a class="cta email" href="mailto:support@meatandmeat.in?subject=Meat%20Order%20Enquiry" aria-label="Email us">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/new-post.png" alt="Email" class="icon-btn" width="24" height="24">
+        Email Us
+      </a>
+    </section>
+    <section class="product-gallery fade-up" id="products">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Buffalo%20block%20cut" target="_blank" aria-label="Order Buffalo block cut">
+            <div class="img-box">
+              <img src="buffaloblock.jpg" alt="Buffalo block cut" loading="lazy">
+            </div>
+            <span>Buffalo block cut</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Buffalo%20curry%20cut" target="_blank" aria-label="Order Buffalo curry cut">
+            <div class="img-box">
+              <img src="buffalo curry cut.jpg" alt="Buffalo curry cut" loading="lazy">
+            </div>
+            <span>Buffalo curry cut</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Buffalo%20biriyani" target="_blank" aria-label="Order Buffalo biriyani">
+            <div class="img-box">
+              <img src="buffalo biriyani cut.png" alt="Buffalo biriyani" loading="lazy">
+            </div>
+            <span>Buffalo biriyani</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Beef%20block%20cut" target="_blank" aria-label="Order Beef block cut">
+            <div class="img-box">
+              <img src="beef block cut.png" alt="Beef block cut" loading="lazy">
+            </div>
+            <span>Beef block cut</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Beef%20curry%20cut" target="_blank" aria-label="Order Beef curry cut">
+            <div class="img-box">
+              <img src="beef currycut.jpeg" alt="Beef curry cut" loading="lazy">
+            </div>
+            <span>Beef curry cut</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Liver" target="_blank" aria-label="Order Liver">
+            <div class="img-box">
+              <img src="liver.png" alt="Liver" loading="lazy">
+            </div>
+            <span>Liver</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Sternums" target="_blank" aria-label="Order Sternums">
+            <div class="img-box">
+              <img src="sternums.jpg" alt="Sternums" loading="lazy">
+            </div>
+            <span>Sternums</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Kappakoot" target="_blank" aria-label="Order Kappakoot">
+            <div class="img-box">
+              <img src="kappakoot.jpg" alt="Kappakoot" loading="lazy">
+            </div>
+            <span>Kappakoot</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Botti" target="_blank" aria-label="Order Botti">
+            <div class="img-box">
+              <img src="botti.jpeg" alt="Botti" loading="lazy">
+            </div>
+            <span>Botti</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Heart" target="_blank" aria-label="Order Heart">
+            <div class="img-box">
+              <img src="heart.jpg" alt="Heart" loading="lazy">
+            </div>
+            <span>Heart</span>
+          </a>
+        </div>
+        <div class="product card">
+          <a href="https://wa.me/919745000319?text=Order%20enquiry%20for%20Soup%20Bone" target="_blank" aria-label="Order Soup Bone">
+            <div class="img-box">
+              <img src="suop bone.webp" alt="Soup Bone" loading="lazy">
+            </div>
+            <span>Soup Bone</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            const size = Math.random() * 5 + 2;
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size}px`;
-            particle.style.left = `${Math.random() * window.innerWidth}px`;
-            particle.style.top = `${Math.random() * window.innerHeight}px`;
-            document.body.appendChild(particle);
+    <section class="info-cards">
+      <section class="about-section fade-in" id="about">
+        <h2>About Us</h2>
+        <p>
+          MEAT & MEAT supplies the freshest <strong>100% Halal</strong> meats for bulk, wholesale, and small orders across Kerala. We deliver hygienic and high-quality meat for events, hotels, caterers, restaurants, institutions, and households.
+        </p>
+      </section>
+      <section class="info-section fade-in" id="location">
+        <h2>Delivery Area</h2>
+        <p>
+          <strong>We deliver orders anywhere in Kerala.</strong> Whether your order is small or large, please contact us to confirm delivery and minimum order quantity for your area.
+        </p>
+      </section>
+      <section class="info-section fade-in" id="hours">
+        <h2>Business Hours</h2>
+        <ul class="hours-list">
+          <li>Open 24 hours, 7 days a week</li>
+        </ul>
+      </section>
+    </section>
 
-            const speed = Math.random() * 5 + 2;
-            let directionX = (Math.random() - 0.5) * speed;
-            let directionY = (Math.random() - 0.5) * speed;
-
-            function moveParticle() {
-                const rect = particle.getBoundingClientRect();
-                let x = rect.left + directionX;
-                let y = rect.top + directionY;
-
-                if (x < 0 || x > window.innerWidth - size) directionX *= -1;
-                if (y < 0 || y > window.innerHeight - size) directionY *= -1;
-
-                particle.style.left = `${x}px`;
-                particle.style.top = `${y}px`;
-
-                requestAnimationFrame(moveParticle);
-            }
-
-            moveParticle();
-            setTimeout(() => particle.remove(), 10000);
-        }
-
-        // Create particles at intervals
-        setInterval(createParticle, 500); // Increased interval for better performance
-
-        // Tailwind custom styles for input and button
-        const style = document.createElement('style');
-        style.innerHTML = `
-            .input-field {
-                padding: 0.75rem 1.25rem;
-                border: 2px solid #00f6ff;
-                border-radius: 0.5rem;
-                background: transparent;
-                color: white;
-                outline: none;
-                transition: all 0.3s ease;
-                font-size: 1rem;
-                width: 100%;
-                max-width: 300px;
-            }
-            .input-field:focus {
-                box-shadow: 0 0 10px #00f6ff;
-            }
-            .btn {
-                padding: 0.75rem 1.75rem;
-                background: #00f6ff;
-                color: #0d1b2a;
-                font-weight: bold;
-                border-radius: 0.5rem;
-                transition: all 0.3s ease;
-                font-size: 1rem;
-                touch-action: manipulation;
-            }
-            .btn:hover {
-                background: #00d4ff;
-                box-shadow: 0 0 10px #00f6ff;
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
+    <section class="social-section fade-in">
+      <h2>Connect with Us</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com/meatandmeat" target="_blank" aria-label="Facebook">
+          <img src="https://img.icons8.com/ios-filled/32/1877F2/facebook-new.png" alt="Facebook" width="32" height="32">
+        </a>
+        <a href="https://instagram.com/meatandmeat.in" target="_blank" aria-label="Instagram">
+          <img src="https://img.icons8.com/ios-filled/32/E4405F/instagram-new.png" alt="Instagram" width="32" height="32">
+        </a>
+        <a href="https://x.com/meatandmeat_ind" target="_blank" aria-label="X (Twitter)">
+          <img src="https://img.icons8.com/ios-filled/32/000000/x.png" alt="X" width="32" height="32">
+        </a>
+        <a href="https://linkedin.com/in/meatandmeat" target="_blank" aria-label="LinkedIn">
+          <img src="https://img.icons8.com/ios-filled/32/0A66C2/linkedin.png" alt="LinkedIn" width="32" height="32">
+        </a>
+      </div>
+      <div class="dev-icon">
+        <a href="https://instagram.com/shaheeem.me" target="_blank" aria-label="Developer Instagram">
+          <img src="https://img.icons8.com/ios-glyphs/32/4a90e2/source-code.png" alt="Developer" width="32" height="32">
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 MEATS & MEATS FOODS PVT LTD . All rights reserved.
+  </footer>
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('loading-spinner').style.display = 'none';
+    });
+    function setInView() {
+      document.querySelectorAll('.fade-in, .fade-up, .slide-in, .card').forEach(el => {
+        el.classList.add('in-view');
+      });
+    }
+    window.addEventListener('DOMContentLoaded', setInView);
+    window.addEventListener('load', () => setTimeout(setInView, 250));
+    window.addEventListener('scroll', setInView);
+  </script>
 </body>
 </html>
